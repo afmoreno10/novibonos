@@ -1,0 +1,30 @@
+<head>
+
+  <title>Matripuntos Vs. Novibonos</title>
+
+</head>
+
+<body>
+  <h1>Hola,</h1>
+  {{> login}}
+
+   {{> Test}}
+  <br>
+  <br>
+  <div id="render-target"></div>
+</body>
+
+<template name="login">
+  {{#if currentUser}}
+  <h1>{{currentUser.username}}</h1>
+
+  <br> <button class="log-out">Log out</button>
+  {{else}}
+
+  {{/if}}
+</template>
+
+<template name="Test">
+        <span class="huge-text">Reserved for charts</span>
+        <div id="container"></div>
+</template>
